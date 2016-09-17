@@ -1,3 +1,5 @@
+# tr #
+
 `tr [OPTION]... SET1 [SET2]`
 
 `tr '[a-z] [A-Z]'`  

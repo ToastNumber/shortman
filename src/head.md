@@ -1,3 +1,5 @@
+# head #
+
 `head [OPTION]... [FILE]`
 
 Gets the head of a file

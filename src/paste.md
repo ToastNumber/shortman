@@ -1,3 +1,5 @@
+# paste #
+
 `paste [OPTION]... [FILE]`
 
 `paste`  

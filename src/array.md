@@ -1,3 +1,5 @@
+# Arrays #
+
 `a=( 1 2 3 )`  
     declares an array with the elements 1, 2, and 3
 

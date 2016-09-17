@@ -1,3 +1,5 @@
+# uniq #
+
 `uniq [OPTION]... [INPUT]`
 
 `uniq`  

@@ -1,3 +1,5 @@
+# cut #
+
 `cut [OPTION]... [FILE]`
 
 Performs the action on each line of the given input
