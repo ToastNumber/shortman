@@ -1,0 +1,12 @@
+#!/bin/bash
+if [ $# -ne 1 ]; then
+  echo "What manual page do you want?"
+  exit
+fi
+
+if [ ! -e "html/$1.html" ]; then
+  echo "No manual page for $1"
+  exit
+fi
+
+google-chrome html/$1.html

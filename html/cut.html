@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+<p><code>cut [OPTION]... [FILE]</code></p>
+<p>Performs the action on each line of the given input</p>
+<p><code>cut -c4</code><br />
+gets the 4th character in each line, e.g. <code>echo 'university' | cut -c4</code> is <code>v</code></p>
+<p><code>cut -c2,5</code><br />
+gets the 2nd and 5th characters in each line</p>
+<p><code>cut -c-4</code><br />
+gets the first 4 characters</p>
+<p><code>cut -c4-</code><br />
+gets characters 4 until the end</p>
+<p><code>cut -d',' -f2</code><br />
+gets the 4th field separated by commas, e.g. <code>echo 'one,two,three,four' | cut -d',' -f2</code> is <code>two</code></p>
+<p><code>cut -d',' -f1,3</code><br />
+gets the 1st and 3rd fields separated by commas<br />
+<strong>Note</strong>: you can specify special characters, e.g. tab, as follows: <code>cut -d$'\t' -f1,3</code></p>
+<p><code>cut -d',' -f-4'</code><br />
+gets the first 4 fields separated by commas</p>
+<p><code>cut -d',' -f4-'</code><br />
+gets the fields 4 until the end separated by commas</p>
+</body>
+</html>
