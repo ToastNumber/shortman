@@ -1,5 +1,6 @@
 #!/bin/bash
 for file in $(ls src/); do
-  destname="$(basename $file .md)".html
-  pandoc -s --from=markdown --to=html src/$file > html/$destname
+  name=$(basename $file .md)
+  destname=$name.html
+  pandoc -s --from=markdown --to=html src/$file | sed "s/<\/title>/$name<\/title>/" > html/$destname
 done
