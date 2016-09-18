@@ -1,0 +1,11 @@
+#!/bin/bash
+
+rm -rf src/index.md
+echo "# shortman #" > index.md
+
+for file in $(ls src); do
+  name=$(basename $file .md)
+  echo "[$name]($name.html)  " >> index.md
+done
+
+mv index.md src/
