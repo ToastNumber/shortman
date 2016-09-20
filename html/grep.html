@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>grep</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+<h1 id="grep">grep</h1>
+<p><code>grep [options] pattern [files]</code></p>
+<p>Searches the files for the pattern.</p>
+<p><code>grep &quot;\\(b\\|c\\|r\\)&quot;at *.java</code><br />
+finds occurrences of <code>bat</code>, <code>cat</code>, or <code>rat</code> in <code>.java</code> files</p>
+<p><code>grep -r &quot;dog&quot; *.java</code><br />
+finds occurrences of the pattern <code>cat</code> in <code>*.java</code> files in all sub-directories</p>
+<p><code>grep -i 'dog' *.java</code><br />
+finds occurrences ignoring case</p>
+</body>
+</html>
