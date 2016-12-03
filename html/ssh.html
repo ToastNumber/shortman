@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>ssh</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+<h1 id="ssh">ssh</h1>
+<p><em>OpenSSH SSH client (remote login program)</em></p>
+<p><code>ssh [OPTION]...</code></p>
+<p><code>ssh -i ~/.ssh/id_rsa</code><br />
+Selects the file from which the identity (private key) for public key authentication is read.</p>
+<p><code>ssh -b 4096</code> use 4096-bit encryption.</p>
+<p><code>ssh -p 1234</code> connect to port 1234 on the remote machine.</p>
+<p><code>ssh -L 3307:some_rds.vpc.aws:3306</code> binds the local port 3307 to <code>some_rds.vpc.aws:3306</code>, which is forwarded on the remote side.</p>
+</body>
+</html>
