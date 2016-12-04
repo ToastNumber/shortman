@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>docker</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+<h1 id="docker">docker</h1>
+<p><code>docker [OPTION]... COMMAND [arg]...</code></p>
+<p><code>docker ps -a</code> List containers, including non-running.</p>
+<p><code>docker images</code> List images.</p>
+<p><code>docker diff a82hbg82nfj</code> Inspect the changes on the container's filesystem.</p>
+<h2 id="docker-run">docker run</h2>
+<p><code>docker run some-image</code> Run a command in a new container.</p>
+<p><code>-i</code> Keep STDIN open even if not attached.</p>
+<p><code>-t</code> Allocate a pseudo-TTY.</p>
+<p><code>--rm=true</code> Automatically remove the container when it exits.</p>
+<p><code>-d</code> Run the container in the background and print the new container ID.</p>
+<p><code>ubuntu /bin/bash</code> Run the <code>ubuntu</code> image in a container and run <code>/bin/bash</code>, keeping STDIN open and giving us a pseudo-TTY.</p>
+<p><code>-p 8081:80</code> Publish the container's port 80 to the host onb port 8081.</p>
+<h2 id="docker-build">docker build</h2>
+<p><code>docker build ~/docker/file/location</code> Build a new docker image using the Dockerfile in the specified location.</p>
+<p><code>-t toastnumber/some-image:1.0</code> Gives the resulting image a tag.</p>
+</body>
+</html>
